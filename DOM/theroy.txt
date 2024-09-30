@@ -1,0 +1,61 @@
+Dom ----- Docoment object model
+deination------ when we convert our html code in js object then it is called Dococment object model(DOM)
+-------------------------------------------------
+
+window is a global object
+--------------------------------------------
+Bom--browser object model 
+defination----when we want to intract with the browser expect index file is called broswer object model
+eg--screeen size..
+----------------------------------------------------------
+selection the body content:-
+1.Dococment.getElementById("")--it will select with the id
+2.docoment.getElementByClassName("")--it will select with the class name
+3.docoment.getElementByTagName("")--it will selectwith the tag name
+4.docoment.quarrySelector("")---it will select only the first children...we have to provide the id/class/tag
+5.Dococment.quarrySelectorAll("")---it will select all ...we have to provide the id/class/tag
+------------------------------------------------
+When we want to change the content of html:-
+1.innerHTML--it will simply change the content of what we are selecting and trying to change 
+2.outerHTML--
+3.textContent--it is giving the output according to what we have writtten in out html code.
+like eg...when we gave a p tag in html and some content and the when we hit a space ..in text content it will
+          sow all the enterlike(\n) in evert part of our content inner enter or outer enter
+4.inner-text----here it is displaying only that content with are displaing in the browse and inner text will not
+show the content before enter and content aftet enter
+---------------------------------------------
+Creating a element & append:
+1.create element--document.createElement('')
+  content--add innerText
+2.append children----body.appendChild()
+3.positon--insertAjacentElement
+  1.beforeBegin----the content will appent just before the slected element
+  2.afterBegin----the content will appent starting in the slected element
+  3.beforeend--the content will appent in the last of the selected element 
+  4.aftereend--the content will appent after the selected element 
+
+-------------------------------------------------------
+
+Removal child:
+ removeChild("")insert which child you want to remove;
+ first we have to select the parent and the we have to select the removing child and then we can
+ the removeChild propert to remove the child.
+
+------------------------------------------------------------
+Style:
+1.style---here we can only can on style at a time.
+2.style.cssText-----here we can change multiple syle at a time.
+
+-------------------------------------------
+When we want to set a attibute:
+.setAttribute()---it is seting the attribute in the element if the attibute are persent the..it will 
+the value.
+
+--------------------------------------------
+ClassList:
+1.Add-----addd a class to element
+2.remove------remove a class from element
+3.toggle----when the class is present in the element than it will remove / when the element is not present
+            in the element than it will add
+4.contain--- it is cheaking the class is present or not.
+----------------------------------------------------
